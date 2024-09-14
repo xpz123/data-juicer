@@ -25,7 +25,8 @@ from . import (audio_ffmpeg_wrapped_mapper, chinese_convert_mapper,
                video_split_by_key_frame_mapper, video_split_by_scene_mapper,
                video_tagging_from_audio_mapper,
                video_tagging_from_frames_mapper,
-               whitespace_normalization_mapper)
+               whitespace_normalization_mapper,
+               generate_subject_mapper)
 from .audio_ffmpeg_wrapped_mapper import AudioFFmpegWrappedMapper
 from .chinese_convert_mapper import ChineseConvertMapper
 from .clean_copyright_mapper import CleanCopyrightMapper
@@ -37,6 +38,7 @@ from .expand_macro_mapper import ExpandMacroMapper
 from .extract_qa_mapper import ExtractQAMapper
 from .fix_unicode_mapper import FixUnicodeMapper
 from .generate_instruction_mapper import GenerateInstructionMapper
+from .generate_subject_mapper import GenerateSubjectMapper
 from .image_blur_mapper import ImageBlurMapper
 from .image_captioning_from_gpt4v_mapper import ImageCaptioningFromGPT4VMapper
 from .image_captioning_mapper import ImageCaptioningMapper
@@ -115,6 +117,7 @@ __all__ = [
     'VideoCaptioningFromVideoMapper',
     'VideoCaptioningFromSummarizerMapper',
     'GenerateInstructionMapper',
+    'GenerateSubjectMapper',
     'FixUnicodeMapper',
     'NlpaugEnMapper',
     'VideoCaptioningFromFramesMapper',
